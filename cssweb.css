@@ -1,0 +1,97 @@
+@chatset "utf-8"
+
+/* ------------------------- css reset ------------------------- */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0;}
+td, th, caption{ font-weight: normal; text-align: left;}
+img, fieldset{border: 0;}
+ol{ padding-left: 1.4em; list-style: decimal;}
+ul{ padding-left: 1.4em; list-style: square;}
+q:before, q:after{ content:'';}
+/* ------------------------- css reset ------------------------- */
+
+body{
+	font-size:62.5%;
+}
+
+h1{
+	font: normal 2.4em Verdana, Geneva, sans-serif; /*orden de fuentes*/
+	background: -webkit-linear-gradient(top, #00F, #0CF);
+	width: 35%;
+	margin: 15px auto;
+	text-align: center;
+	padding: 15px;
+	color:#FFF;
+	box-shadow: #00F 5px 5px 10px;
+	text-shadow: #FFF 2px 2px 3px;
+}
+
+h2{
+	font: normal 1.7em Verdana, Geneva, sans-serif; /*orden de fuentes*/
+	margin: 0;
+	padding: 5px 0 5px 8px;
+	color: #000;
+}
+
+h3{
+	font: normal 1.9em Verdana, Geneva, sans-serif; /*orden de fuentes*/
+	margin: 0;
+	padding: 5px 0 5px 8px;
+	color: #000;
+}
+
+nav table{
+	margin: 15px auto;
+}
+
+nav td{
+	font: normal 1.9em Verdana, Geneva, sans-serif; /*orden de fuentes*/
+	margin: 0;
+	padding: 5px 0 5px 8px;
+	color: #000;
+}
+
+figure{
+	float:left;
+}
+
+/* solo afecta a las img de dentro del figure */
+figure img{
+	padding: 4px; /* borde a cada foto de 4 pix*/
+	background: #666; /*sombreado*/
+	border-radius: 20px; /* redondeamos las img */	
+	-webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s; /* 0.3 lo que tarda en crecer, 0.1 lo que tarda en ejecutar*/
+	-moz-transition: -moz-transform 0.3s ease-in-out 0.1s;
+	/*-ms-transition: -ms-transform 0.3s ease-in-out 0.1s;
+	-o-transition: -o-transform 0.3s ease-in-out 0.1s; */
+}
+
+/*cuando tengamos el raton sobre una imagen dentro de un figure */
+figure img:hover{
+	-webkit-transform:scale(1.2); /*lo hace un poco mas grande (chrome)*/
+	-moz-transform: scale(1.2); /*firefox*/
+	-ms-transform: scale(1.2); /*exp*/
+	-o-transform: scale(1.2); /*opera*/
+}
+
+figcaption{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	margin-top: 5px;
+}
+
+footer {
+	clear:both; /* eso es para quitar el float de las imagenes y no se ponga alrededor de la img */
+	padding-top: 10px;
+}
+
+section {
+	clear:both; /* eso es para quitar el float del menu */
+	padding-top: 10px;
+}
